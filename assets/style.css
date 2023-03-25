@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+:root {
+  --main-bg-color: #777;
+  --blue-color: #1e9aff;
+}
+
+#mainContainer {
+  font-family: "Alkatra", sans-serif;
+  min-height: 100vh;
+  max-height: 100vh;
+}
+#mainContainer #xoContainer {
+  height: 302px;
+  width: 302px;
+  border: solid 1px var(--main-bg-color);
+  margin-left: 100px;
+  margin-top: 100px;
+  border-radius: 10px;
+  overflow: hidden;
+  opacity: 0.7;
+}
+#mainContainer #xoContainer div {
+  height: 100px;
+  width: 100px;
+  border: 1px solid var(--main-bg-color);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+#mainContainer #newGameContainer {
+  margin-left: 100px;
+  width: 350px;
+}
+#mainContainer #newGameContainer button {
+  border-radius: 10px;
+}
+#mainContainer #newGameContainer input {
+  height: 28px;
+  width: 28px;
+  margin-top: auto;
+  margin-left: 20px;
+  cursor: pointer;
+}
+#mainContainer #newGameContainer p {
+  margin: 0;
+  margin-left: 10px;
+}
+#mainContainer #playingStatusContainer {
+  margin-left: 100px;
+  margin-top: 10px;
+  border: 1px solid var(--main-bg-color);
+  padding: 10px 20px;
+  width: 330px;
+  border-radius: 10px;
+  opacity: 0.7;
+  height: 71px;
+}
+#mainContainer #playingStatusContainer h2 {
+  font-size: 26px;
+}
+#mainContainer #victoryNoticeContainer {
+  margin-left: 100px;
+  margin-top: 10px;
+  border: 1px solid var(--main-bg-color);
+  padding: 10px 20px;
+  width: 330px;
+  border-radius: 10px;
+  opacity: 0.7;
+  height: 71px;
+}
+#mainContainer #victoryNoticeContainer h2 {
+  color: var(--blue-color);
+  font-weight: bold;
+  font-size: 26px;
+}
+#mainContainer #myFooter {
+  width: 100%;
+  background-color: var(--blue-color);
+  margin-top: auto;
+  height: 100px;
+}
+#mainContainer #myFooter h2 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+@media (max-width: 929px) {
+  #mainContainer {
+    flex-direction: column;
+    justify-content: center;
+    max-height: calc(100vh - 50px);
+  }
+  #mainContainer #xoContainer {
+    margin-top: 35px;
+    margin-left: 0;
+  }
+  #mainContainer #newGameContainer {
+    margin-top: 30px;
+    margin-left: 0;
+    width: 302px;
+  }
+  #mainContainer #playingStatusContainer {
+    margin-left: 0;
+    width: 302px;
+  }
+  #mainContainer #victoryNoticeContainer {
+    margin-left: 0;
+    width: 302px;
+  }
+  #mainContainer #animationContainer {
+    margin-left: 292px;
+    margin-top: -175px;
+  }
+  #mainContainer #myFooter {
+    height: 50px;
+  }
+  #mainContainer #myFooter h2 {
+    font-size: 19px;
+  }
+}
+.myHide {
+  display: none;
+}
+
+.opacityZero {
+  opacity: 0 !important;
+}/*# sourceMappingURL=style.css.map */

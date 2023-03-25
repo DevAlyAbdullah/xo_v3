@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="assets/lib/bootstrap/css/bootstrap.min.css" />
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="assets/lib/fontawesome/css/all.min.css" />
+    <!--Style-->
+    <link rel="stylesheet" href="assets/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="mainContainer" class="d-flex align-items-center flex-wrap">
+      <div id="xoContainer" class="d-flex flex-wrap">
+        <div id="one" value="#one"></div>
+        <div id="two" value="#two"></div>
+        <div id="three" value="#three"></div>
+        <div id="four" value="#four"></div>
+        <div id="five" value="#five"></div>
+        <div id="six" value="#six"></div>
+        <div id="seven" value="#seven"></div>
+        <div id="eight" value="#eight"></div>
+        <div id="nine" value="#nine"></div>
+      </div>
+      <div id="infoContainer">
+        <div id="newGameContainer" class="d-flex align-items-center">
+          <button onClick="window.location.reload();" class="btn btn-primary">
+            New Game
+          </button>
+          <div class="d-flex justify-content-center align-items-center">
+            <input type="checkbox" id="robot" />
+            <p>Robot Mode</p>
+          </div>
+        </div>
+        <div id="playingStatusContainer">
+          <h2 class="mt-2 playingStatus">X is now Playing</h2>
+          <h2 class="mt-2 playingStatus myHide">O is now Playing</h2>
+        </div>
+        <div id="victoryNoticeContainer" class="opacityZero">
+          <h2 class="mt-2"></h2>
+        </div>
+      </div>
+      <div
+        id="myFooter"
+        class="d-flex justify-content-center align-items-center"
+      >
+        <h2 class="mt-2">Coded by love &hearts; DevAlyAbdullah</h2>
+      </div>
+    </div>
+
+    <!--Bootstrap-->
+    <script src="assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--jQuery-->
+    <script src="assets/lib/jquery/jquery-3.6.4.min.js"></script>
+    <!--Master-->
+    <script src="assets/master.js"></script>
+  </body>
+</html>
