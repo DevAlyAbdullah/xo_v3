@@ -126,11 +126,13 @@ $(function () {
         }
         victoryAudio.play();
       }
-      $("#victoryNoticeContainer").toggleClass("opacityZero");
+      $("#victoryNoticeContainer").toggleClass("myHide");
+      $("#playingStatusContainer").toggleClass("myHide");
       gameComplete = true;
     } else if (divs.length <= 0) {
       $("#victoryNoticeContainer h2").append("Draw!");
-      $("#victoryNoticeContainer").toggleClass("opacityZero");
+      $("#victoryNoticeContainer").toggleClass("myHide");
+      $("#playingStatusContainer").toggleClass("myHide");
       gameComplete = true;
     } else {
       gameComplete = false;
