@@ -66,6 +66,10 @@ $(function () {
       div.append(currentTurn);
       div.val(currentTurn);
 
+      if (currentTurn === "O") {
+        div.css("color", "red");
+      }
+
       var newDivs = divs.filter((value) => value !== div.attr("value"));
       divs = newDivs;
 
